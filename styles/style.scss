@@ -1,0 +1,133 @@
+
+$Verypaleblue: hsl(225, 100%, 98%);
+$Desaturatedblue: hsl(224, 23%, 55%);
+$Darkblue: hsl(223, 47%, 23%);
+$Paleblue: hsl(225, 100%, 94%);
+$Brightblue: hsl(245, 75%, 52%);
+
+
+
+
+html{
+    font-family: 'Red Hat Display', sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    min-width: 50rem;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-color: $Paleblue;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: $Verypaleblue;
+    width: 50rem;
+    height: 65rem;
+    border-radius: 2rem;
+    margin: 5rem 5rem;
+    box-shadow: 0 0 10rem -4rem $Brightblue;
+    
+    &__img{
+        width: 100%;
+        border-radius: 2rem 2rem 0 0;
+    }
+    &__header{
+        margin-top: 1.5rem;
+        &__title{
+            font-size: 2.5rem;
+            font-weight: 900;
+        }
+        &__p{
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: $Desaturatedblue;
+            line-height: 2.4rem;
+
+        }
+    }
+    &__main{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-around;
+        background-color: hsl(229, 73%, 96%);
+        border-radius: 1rem;
+        width: 70%;
+        height: 13%;
+
+        &__text{
+            display: flex;
+            text-align: start;
+            flex-direction: column;
+            line-height: 1rem;
+            margin: 0 8rem 1rem 0;
+            font-weight: 700;
+        }
+        &__title{
+        font-size: 1.5rem;
+        }   
+        &__price{
+            font-size: 1.3rem;
+            color: $Desaturatedblue;
+        }
+        &__change{
+            font-size: 1.3rem;
+            color: $Brightblue;
+            font-weight: 900;
+            margin-right: 1rem;
+            &:hover{
+                color:hsl(241, 83%, 68%);
+                text-decoration: none;
+            }
+        }
+    }
+    &__footer{
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+        align-items: center;
+        &__buttom{
+            display: flex;
+            margin: 0 2rem 0 2rem;
+            text-decoration: none;
+            background-color: $Brightblue;
+            color: white;
+            border-radius: 1.2rem;
+            padding: 1.8rem 11rem;
+            max-height: 1rem;
+            box-shadow: 0 0 0.3rem 0 $Brightblue;
+            align-items: center;
+           
+            &__text{
+                font-size: 1.5rem;
+                font-weight: 900; 
+                width: 15rem;
+                display:inline-block;
+            }
+            &:hover{
+                background-color: hsl(241, 83%, 68%);
+            }
+        }
+        &__cancel{
+            margin-top: 3rem;
+            font-size: 1.5rem;
+            text-decoration: none;
+            font-weight: 900;
+            color: $Desaturatedblue;
+            &:hover{
+                color: black;
+            }
+        }
+    }
+    
+}
+
+

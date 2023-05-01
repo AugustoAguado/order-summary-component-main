@@ -1,0 +1,117 @@
+html {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  min-width: 50rem;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(225, 100%, 94%);
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: hsl(225, 100%, 98%);
+  width: 50rem;
+  height: 65rem;
+  border-radius: 2rem;
+  margin: 5rem 5rem;
+  box-shadow: 0 0 10rem -4rem hsl(245, 75%, 52%);
+}
+.card__img {
+  width: 100%;
+  border-radius: 2rem 2rem 0 0;
+}
+.card__header {
+  margin-top: 1.5rem;
+}
+.card__header__title {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.card__header__p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+  line-height: 2.4rem;
+}
+.card__main {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  background-color: hsl(229, 73%, 96%);
+  border-radius: 1rem;
+  width: 70%;
+  height: 13%;
+}
+.card__main__text {
+  display: flex;
+  text-align: start;
+  flex-direction: column;
+  line-height: 1rem;
+  margin: 0 8rem 1rem 0;
+  font-weight: 700;
+}
+.card__main__title {
+  font-size: 1.5rem;
+}
+.card__main__price {
+  font-size: 1.3rem;
+  color: hsl(224, 23%, 55%);
+}
+.card__main__change {
+  font-size: 1.3rem;
+  color: hsl(245, 75%, 52%);
+  font-weight: 900;
+  margin-right: 1rem;
+}
+.card__main__change:hover {
+  color: hsl(241, 83%, 68%);
+  text-decoration: none;
+}
+.card__footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  align-items: center;
+}
+.card__footer__buttom {
+  display: flex;
+  margin: 0 2rem 0 2rem;
+  text-decoration: none;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  border-radius: 1.2rem;
+  padding: 1.8rem 11rem;
+  max-height: 1rem;
+  box-shadow: 0 0 0.3rem 0 hsl(245, 75%, 52%);
+  align-items: center;
+}
+.card__footer__buttom__text {
+  font-size: 1.5rem;
+  font-weight: 900;
+  width: 15rem;
+  display: inline-block;
+}
+.card__footer__buttom:hover {
+  background-color: hsl(241, 83%, 68%);
+}
+.card__footer__cancel {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: 900;
+  color: hsl(224, 23%, 55%);
+}
+.card__footer__cancel:hover {
+  color: black;
+}/*# sourceMappingURL=style.css.map */
